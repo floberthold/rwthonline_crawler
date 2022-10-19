@@ -21,15 +21,6 @@ def get_auction_id(text):
     auction_id = auction_end_timestamp + " - " + auction_title
     return auction_id
 
-def get_auction_detail_end_time(driver):
-    # get end time from auction offer site
-    element_css_selector = "#auk_uebersicht"
-    el = driver.find_element_by_css_selector(element_css_selector)
-    found_parts = re.search('Endet am:\n(.+?)\n', el.text)
-    if found_parts: end_time = found_parts.group(1) # take the middle Part
-
-    return end_time
-
 def get_auction_detail_id(driver):
     auction_title = driver.find_element_by_css_selector(".auktionstitel").text
 
