@@ -22,3 +22,8 @@ from: https://chromedriver.chromium.org/downloads
 
 
 Code based in tutorial from: https://medium.com/swlh/introduction-to-selenium-create-a-web-bot-with-python-cd59a741fdae
+
+## 3. Execture our Script
+
+- Start the chromedriver.exe
+- run the main.ipynb
